@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="overlay_fab_size">56dp</dimen>
+    <dimen name="overlay_fab_margin">16dp</dimen>
+    <dimen name="overlay_status_height">28dp</dimen>
+    <dimen name="overlay_status_text">12sp</dimen>
+    <dimen name="overlay_corner">14dp</dimen>
+
+    <dimen name="demo_player_size">44dp</dimen>
+    <dimen name="demo_meteor_size">40dp</dimen>
+    <dimen name="demo_gem_size">28dp</dimen>
+</resources>

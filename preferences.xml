@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="Movement Safety">
+
+        <EditTextPreference
+            android:key="pref_speed"
+            android:title="@string/pref_speed_title"
+            android:summary="@string/pref_speed_desc"
+            android:defaultValue="0.25"
+            android:inputType="numberDecimal" />
+
+        <EditTextPreference
+            android:key="pref_reaction"
+            android:title="@string/pref_reaction_title"
+            android:summary="@string/pref_reaction_desc"
+            android:defaultValue="150"
+            android:inputType="number" />
+
+        <EditTextPreference
+            android:key="pref_min_interval"
+            android:title="@string/pref_min_interval_title"
+            android:summary="@string/pref_min_interval_desc"
+            android:defaultValue="120"
+            android:inputType="number" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Calibration">
+
+        <EditTextPreference
+            android:key="pref_calib_dur"
+            android:title="@string/pref_calib_duration_title"
+            android:summary="@string/pref_calib_duration_desc"
+            android:defaultValue="3"
+            android:inputType="number" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Accessibility Feedback">
+
+        <SwitchPreferenceCompat
+            android:key="pref_vibrate"
+            android:title="@string/pref_vibrate_title"
+            android:summary="@string/pref_vibrate_desc"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="pref_talkback"
+            android:title="@string/pref_talkback_title"
+            android:summary="@string/pref_talkback_desc"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GameAssist</string>
+    <string name="settings_title">Settings</string>
+    <string name="demo_game_title">Meteor Dodge (Demo)</string>
+
+    <string name="accessibility_service_label">GameAssist — Accessibility Helper</string>
+    <string name="accessibility_service_description">
+        Assistive accessibility service for visually impaired and differently-abled gamers.
+        Captures the screen, detects falling threats (meteors/fireballs), satellites/UFOs,
+        and collectibles, then gently guides the player character away from danger and
+        towards safe items by simulating human-like drag gestures.
+    </string>
+
+    <!-- Overlay -->
+    <string name="overlay_fab_on">Assist ON</string>
+    <string name="overlay_fab_off">Assist OFF</string>
+    <string name="overlay_status_idle">Idle</string>
+    <string name="overlay_status_scanning">Scanning…</string>
+    <string name="overlay_status_safe">Safe</string>
+    <string name="overlay_status_threat_left">Threat ← Left</string>
+    <string name="overlay_status_threat_right">Threat → Right</string>
+    <string name="overlay_status_threat_center">Threat ↑ Center</string>
+    <string name="overlay_status_collectible">Collectible nearby</string>
+    <string name="overlay_status_calibrating">Calibrating…</string>
+
+    <!-- Notification -->
+    <string name="notif_channel_id">gameassist_service</string>
+    <string name="notif_channel_name">GameAssist Service</string>
+    <string name="notif_channel_desc">Keeps the assist running while you play.</string>
+    <string name="notif_title">GameAssist active</string>
+    <string name="notif_text">Tap to open. Long-press the floating button to stop.</string>
+
+    <!-- MainActivity -->
+    <string name="hero_title">GameAssist</string>
+    <string name="hero_subtitle">Accessibility Helper for gamers with motor disabilities</string>
+    <string name="step_1_title">1. Grant Accessibility permission</string>
+    <string name="step_1_desc">Required for the service to read the screen and inject drag gestures.</string>
+    <string name="step_2_title">2. Grant Display over other apps</string>
+    <string name="step_2_desc">Required for the floating ON/OFF button that works on top of any game.</string>
+    <string name="step_3_title">3. Start screen capture</string>
+    <string name="step_3_desc">Required for color detection. Tap the floating button to begin guiding.</string>
+    <string name="btn_open_accessibility">Open Accessibility Settings</string>
+    <string name="btn_open_overlay">Open Overlay Settings</string>
+    <string name="btn_start_capture">Start Screen Capture</string>
+    <string name="btn_launch_demo">Launch Demo Game</string>
+    <string name="btn_open_settings">Settings</string>
+    <string name="status_accessibility_granted">Accessibility: granted</string>
+    <string name="status_accessibility_missing">Accessibility: NOT granted</string>
+    <string name="status_overlay_granted">Overlay: granted</string>
+    <string name="status_overlay_missing">Overlay: NOT granted</string>
+    <string name="status_capture_granted">Capture: ready</string>
+    <string name="status_capture_missing">Capture: not started</string>
+
+    <!-- Settings -->
+    <string name="pref_speed_title">Player move speed</string>
+    <string name="pref_speed_desc">Max %1$.0f%% of screen width per second (human-like ≈ 25%)</string>
+    <string name="pref_reaction_title">Reaction time (ms)</string>
+    <string name="pref_reaction_desc">Delay between detection and gesture (100–200ms recommended)</string>
+    <string name="pref_calib_duration_title">Calibration duration (sec)</string>
+    <string name="pref_calib_duration_desc">How long to sample dominant colors at startup</string>
+    <string name="pref_min_interval_title">Min gesture interval (ms)</string>
+    <string name="pref_min_interval_desc">Avoids jitter — refuse injections newer than this</string>
+    <string name="pref_vibrate_title">Vibrate on assist action</string>
+    <string name="pref_vibrate_desc">Haptic feedback whenever a drag is injected</string>
+    <string name="pref_talkback_title">Announce state via TalkBack</string>
+    <string name="pref_talkback_desc">Reads out state changes for blind users</string>
+
+    <!-- Demo game -->
+    <string name="demo_instructions">
+        Drag the white ship at the bottom to dodge red meteors and catch blue gems.
+        Then toggle GameAssist on — it should move your ship for you.
+    </string>
+    <string name="demo_score">Score: %1$d</string>
+    <string name="demo_game_over">Game Over — tap to restart</string>
+</resources>

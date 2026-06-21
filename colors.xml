@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand palette — high contrast for visually impaired users -->
+    <color name="brand_primary">#1F6FEB</color>          <!-- vivid blue -->
+    <color name="brand_primary_dark">#0F4FB8</color>
+    <color name="brand_accent">#FF6B35</color>           <!-- warm orange -->
+    <color name="brand_background">#0E1116</color>       <!-- near-black -->
+    <color name="brand_surface">#1A1F2A</color>
+    <color name="brand_on_primary">#FFFFFF</color>
+    <color name="brand_on_background">#E8ECF1</color>
+    <color name="brand_on_surface">#C5CCD6</color>
+    <color name="brand_disabled">#5A6573</color>
+
+    <color name="status_safe">#2BD4A1</color>
+    <color name="status_threat">#FF3B5C</color>
+    <color name="status_collect">#FFD93D</color>
+    <color name="status_scan">#7AB8FF</color>
+    <color name="status_idle">#9AA4B2</color>
+
+    <color name="overlay_fab_bg_on">#1F6FEB</color>
+    <color name="overlay_fab_bg_off">#3A4252</color>
+
+    <!-- Demo game -->
+    <color name="demo_bg">#020409</color>
+    <color name="demo_player">#FFFFFF</color>
+    <color name="demo_meteor">#FF4D2E</color>
+    <color name="demo_gem">#3DB4FF</color>
+</resources>
