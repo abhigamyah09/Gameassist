@@ -14,18 +14,21 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
+      - name: Install Gradle
+        uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: '8.4'
+
       - name: Unzip Project
         run: unzip GameAssist_Final.zip
 
       - name: Build APK
         run: |
           cd GameAssist
-          printf '#!/usr/bin/env sh\nAPP_HOME=`cd "$(dirname "$0")" && pwd`\nCLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar\nexec java -Xmx512m -Xms64m -classpath "$CLASSPATH" org.gradle.wrapper.GradleWrapperMain "$@"\n' > gradlew
-          chmod +x gradlew
-          ./gradlew assembleDebug --no-daemon
+          gradle assembleDebug --no-daemon
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: GameAssist-APK
-          path: GameAssist/app/build/outputs/apk/debug/app-debug.apk
+          path: GameAssist/app/build/outputs/apk/debug/app-debug.apk 
